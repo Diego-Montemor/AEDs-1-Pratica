@@ -146,18 +146,18 @@ int main(int argc, char** argv) {
             case 8: // Parte 8 exclui todos os valores repetidos
                 for (int i = 0; i < QuantAtual; i++) {
                     int n1 = tabela[i], igual = 0;
-                    for (int j = 0; j < QuantAtual; j++) {
+                    for (int j = 0; j < QuantAtual; j++) { // faz a verificação se tem repetição
                         int n2 = tabela[j];
                         if (n1 == n2) {
-                            igual = 1;
+                            igual = 1;  // caso tenha repetição define "igual" = 1
                         }
                     }
-                    if (igual = 1) {
+                    if (igual = 1) {  // caso "igual" seja 1 ele verifica quais estão repetidos e apaga
                         for (int i = 0; i < QuantAtual; i++) {
                             if (tabela[i] == n1) {
                                 tabela[i] = 0;
                                 NExcluido++;
-                                for (int j = i + 1; j < QuantAtual; j = j + 2) {
+                                for (int j = i + 1; j < QuantAtual; j = j + 2) {  // anda com todos os valores para esquerda após um valor ter sido removido
                                     int p1, p2;
                                     p1 = tabela[j];
                                     p2 = tabela[j + 1];
