@@ -26,7 +26,7 @@ int main(){
 
     p = &X;
     printf("\nO valor de &X: %p  \nO valor de X: %X\n",&X,X);
-    printf("\nO valor de P: %p  \nOvalor de *P: %d\n",p,*p);
+    printf("\nO valor de P: %p  \nO valor de *P: %d\n",p,*p);
 
     p++;
     printf("\nO valor de p: %p\nO valor de *p: %d\n",p,*p);
