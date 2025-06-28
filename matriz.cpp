@@ -70,11 +70,11 @@ int main(){
                     MatrizResultado[i][j] = 0 ;
                 }
             }             
-            for(int i = 0 ; i < i2 ; i++){
-                for(int j = 0 ; j < j1 ; j++){
-                    for(int x = 0 ; x < i1 ; x++){
-                        MatrizResultado[i][j] = MatrizResultado[i][j]+(matriz1[x][j] * matriz2[i][x]);
-                        cout << matriz1[x][j] << " x " << matriz2 [i][x] << " + ";
+            for(int i = 0 ; i < i1 ; i++){
+                for(int j = 0 ; j < j2 ; j++){
+                    for(int x = 0 ; x < j1 ; x++){
+                        MatrizResultado[i][j] = MatrizResultado[i][j]+(matriz1[i][x] * matriz2[x][j]);
+                        cout << matriz1[i][x] << " x " << matriz2 [x][j] << " + ";
                     }
                     cout << " = " << MatrizResultado[i][j] << " ";
                 }
